@@ -1,6 +1,10 @@
 package createaccount;
 
+import java.util.Scanner;
+
 public class CreateAccount {
+	private static Scanner a;
+	
 		protected String first_name;
 		protected String second_name;
 		protected String cpf;
@@ -9,17 +13,75 @@ public class CreateAccount {
 		protected int month;
 		protected int year;
 		protected int pass;
-		protected String card_number;
+		protected int card_number;
 		
-	public CreateAccount(String first_name, String second_name, String cpf, int age,int day,int month, int year, int pass, String card_number) {
-		this.first_name = first_name;
-		this.second_name = second_name;
-		this.cpf = cpf;
-		this.age = age;
-		this.day = day;
-		this.month = month;
-		this.year = year;
-		this.pass = pass;
-		this.card_number = card_number;
+	
+	//GETTERS
+	public String getFirstName() {
+		return this.first_name;
+	}
+	public String getSecondName() {
+		return this.second_name;
+	}
+	public String getCpf() {
+		return this.cpf;
+	}
+	public int getAge() {
+		return this.age;
+	}
+	public int getBMonth() {
+		return this.month;
+	}
+	public int getBYear() {
+		return this.year;
+	}
+	public int getPass() {
+		return this.pass;
+	}
+	public int getCardNumber() {
+		return this.card_number;
+	}
+	public int getBDay() {
+		return this.day;
+	}
+	
+	//SETTERS
+	public void setFirstName(String fn) {
+		this.first_name = fn;
+	}
+	public void setSecondName(String sn) {
+		this.second_name = sn;
+	}
+	public void setCpf(String cpf_) {
+		this.cpf = cpf_;
+	}
+	public void setAge(int age_) {
+		this.age = age_;
+	}
+	public void setBDay(int day_) {
+		this.day = day_;
+	}
+	public void setBMonth(int month_) {
+		this.month = month_;
+	}
+	public void setBYear(int year_) {
+		this.year = year_;
+	}
+	public void setPass(int pass_) {
+		this.pass = pass_;
+	}
+	public void setCardNumber(int cn) {
+		this.card_number = cn;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
