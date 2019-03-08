@@ -39,7 +39,15 @@ public class main_menu {
 		cont = s.nextInt();
 		
 			if(cont == 1) {
-				
+				System.out.println("Type your card number");
+				card_number = s.nextInt();
+				System.out.println("Type your password");
+				pass = s.nextInt();
+				for(CreateAccount c:conta) {
+					if(card_number == c.getCardNumber() && pass == c.getPass()) {
+						
+					}
+				}
 			}	
 			
 			if(cont == 2) {

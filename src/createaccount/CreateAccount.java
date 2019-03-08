@@ -14,7 +14,7 @@ public class CreateAccount {
 		protected int year;
 		protected int pass;
 		protected int card_number;
-		
+		protected float saldo;
 	
 	//GETTERS
 	public String getFirstName() {
@@ -43,6 +43,9 @@ public class CreateAccount {
 	}
 	public int getBDay() {
 		return this.day;
+	}
+	public float getSaldo() {
+		return this.saldo;
 	}
 	
 	//SETTERS
@@ -73,6 +76,7 @@ public class CreateAccount {
 	public void setCardNumber(int cn) {
 		this.card_number = cn;
 	}
+	
 }
 
 
